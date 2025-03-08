@@ -24,7 +24,7 @@ CLASS zcl_gitdemo IMPLEMENTATION.
     DATA user_id TYPE sxco_user_name.
     user_id = xco_cp=>sy->user( )->name.
 
-    out->write( |My User id is { user_id }| ).
+    out->write( |My User id is => { user_id }| ).
   ENDMETHOD.
 
 
